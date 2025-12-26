@@ -1,0 +1,1 @@
+ALTER TABLE `model_evaluations` ADD `rocAuc` varchar(20) DEFAULT '0' NOT NULL;

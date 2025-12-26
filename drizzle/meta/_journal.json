@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1766735624728,
+      "tag": "0000_mighty_the_fury",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1766735765968,
+      "tag": "0001_short_master_chief",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1766736281762,
+      "tag": "0002_magenta_changeling",
+      "breakpoints": true
+    }
+  ]
+}

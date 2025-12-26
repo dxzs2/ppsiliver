@@ -1,0 +1,26 @@
+{
+  "query": "INSERT INTO model_evaluations (\n  modelType,\n  datasetName,\n  accuracy,\n  precision,\n  recall,\n  f1Score,\n  rocAuc,\n  confusionMatrixJson,\n  rocCurveJson,\n  precisionRecallCurveJson,\n  featureImportanceJson,\n  metadataJson\n) VALUES (\n  'XGBoost',\n  'Liver Patient Dataset (LPD)',\n  '0.9977194982896237',\n  '0.9975208474194276',\n  '0.9993226461955295',\n  '0.9984209339048049',\n  '0.9988',\n  '{\"tn\": 1699, \"fp\": 11, \"fn\": 3, \"tp\": 4426}',\n  '[{\"fpr\": 0.0, \"tpr\": 0.0}, {\"fpr\": 0.0, \"tpr\": 0.0011773549883161512}]',\n  '[{\"recall\": 0.0, \"precision\": 1.0}, {\"recall\": 0.0002262443438651326, \"precision\": 1.0}]',\n  '[{\"name\": \"Direct Bilirubin\", \"importance\": 0.1771545559167862}, {\"name\": \"Total Bilirubin\", \"importance\": 0.15639211237430573}]',\n  '{\"testSetSize\": 6139, \"trainingDate\": \"2025-12-26T03:06:00Z\"}'\n);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user GGaMo9p4xuhArJJ.root --database WMax2kWf3iiTtU4TkK8scw --execute INSERT INTO model_evaluations (\n  modelType,\n  datasetName,\n  accuracy,\n  precision,\n  recall,\n  f1Score,\n  rocAuc,\n  confusionMatrixJson,\n  rocCurveJson,\n  precisionRecallCurveJson,\n  featureImportanceJson,\n  metadataJson\n) VALUES (\n  'XGBoost',\n  'Liver Patient Dataset (LPD)',\n  '0.9977194982896237',\n  '0.9975208474194276',\n  '0.9993226461955295',\n  '0.9984209339048049',\n  '0.9988',\n  '{\"tn\": 1699, \"fp\": 11, \"fn\": 3, \"tp\": 4426}',\n  '[{\"fpr\": 0.0, \"tpr\": 0.0}, {\"fpr\": 0.0, \"tpr\": 0.0011773549883161512}]',\n  '[{\"recall\": 0.0, \"precision\": 1.0}, {\"recall\": 0.0002262443438651326, \"precision\": 1.0}]',\n  '[{\"name\": \"Direct Bilirubin\", \"importance\": 0.1771545559167862}, {\"name\": \"Total Bilirubin\", \"importance\": 0.15639211237430573}]',\n  '{\"testSetSize\": 6139, \"trainingDate\": \"2025-12-26T03:06:00Z\"}'\n);",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1064 (42000) at line 1: You have an error in your SQL syntax; check the manual that corresponds to your TiDB version for the right syntax to use line 5 column 12 near \"precision,",
+    "  recall,",
+    "  f1Score,",
+    "  rocAuc,",
+    "  confusionMatrixJson,",
+    "  rocCurveJson,",
+    "  precisionRecallCurveJson,",
+    "  featureImportanceJson,",
+    "  metadataJson",
+    ") VALUES (",
+    "  'XGBoost',",
+    "  'Liver Patient Dataset (LPD)',",
+    "  '0.9977194982896237',",
+    "  '0.9975208474194276',",
+    "  '0.9993226461955295',",
+    "  '0.9984209339048049',",
+    "  '0.9988',",
+    "  '{\"tn\": 1699, \"fp\": 11, \"fn\": 3, \"tp\": 4426}',",
+    "  '["
+  ]
+}
