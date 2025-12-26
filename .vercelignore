@@ -1,7 +1,13 @@
 server/
 drizzle/
 .manus/
+patches/
 *.test.ts
 vitest.config.ts
 tsconfig.json
 pnpm-lock.yaml
+node_modules/
+dist/
+.git/
+.gitignore
+
